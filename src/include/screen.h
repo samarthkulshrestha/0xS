@@ -97,9 +97,10 @@ void print_ch(char c) {
 
 void print(string ch) {
     uint16 i = 0;
+    uint8 length = strlength(ch) - 1;
 
-    for (i; i < strlength(ch); i++) {
-        printch(ch[i]);
+    for (i; i < length; i++) {
+        print_ch(ch[i]);
     }
 }
 
